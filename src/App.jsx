@@ -1,11 +1,13 @@
 import Greeting from "./Greeting"
 import "./App.css"
 
+const age = 10 * 5
+
 function App() {
   return (
     <>
       <h1>Hello</h1>
-      <Greeting />
+      <Greeting foo="bar" name="Matt" age={age} />
       <Greeting />
       <p>Lorem ipsum dolor</p>
       <Greeting />

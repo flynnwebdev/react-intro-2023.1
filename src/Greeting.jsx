@@ -1,7 +1,8 @@
-function Greeting() {
+function Greeting({ name, age }) {
+  console.log(age)
   return <>
-      <p>FR: Bonjour!</p>
-      <p>ES: Hola!</p>
+      <p>FR: Bonjour{name ? `, ${name}` : ''}!</p>
+      <p>ES: Hola {age}!</p>
     </>
 }
 
